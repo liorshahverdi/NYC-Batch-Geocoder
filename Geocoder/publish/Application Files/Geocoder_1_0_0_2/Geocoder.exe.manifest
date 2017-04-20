@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="Geocoder.exe" version="1.0.0.2" publicKeyToken="5ad6ac8eb6d02374" language="neutral" processorArchitecture="amd64" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Geocoder" version="1.0.0.0" language="neutral" processorArchitecture="amd64" />
+    <commandLine file="Geocoder.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Geocoder.exe" size="12240">
+      <assemblyIdentity name="Geocoder" version="1.0.0.0" language="neutral" processorArchitecture="amd64" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>91kXukwdvSkqz6ujjT7N0FUV/dfQjc/lOcXt+QOrwOE=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="GeoX.dll" size="353280">
+      <assemblyIdentity name="GeoX" version="14.1.3.5" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>7P72H7HocaeR2j4sdGAoSuHM5+fKxAKyTMgtGY8AZsA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="GeoXClientStub.dll" size="20480">
+      <assemblyIdentity name="GeoXClientStub" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>D7TFxxVeb03ioY0L7OhEQ4NvL2G17xdbyqNuGE79FBc=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SoftwareAG.EntireX.NETWrapper.Runtime.dll" size="115744">
+      <assemblyIdentity name="SoftwareAG.EntireX.NETWrapper.Runtime" version="8.2.2.0" publicKeyToken="645917C53EE5C617" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>U0aLVaP7WBl3NPZiV9cKerXs9XFxHa7eKonRhp/RhEY=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Geocoder.exe.config" size="187">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>xm4bo26HQ0LNVwz1vdPYtzhkpMnp2AI5i+f0b+OahTI=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=LIORSHAHVERDI\Lior" issuerKeyHash="b34ac726939c291c0700f5ff866488b5bd23b5d6" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>dQZicKHasgyNUF3RExL1n1QLEy2ikXZ3kA4i358lesc=</DigestValue></Reference></SignedInfo><SignatureValue>qa1hXcAO8F9spDwvijPnsdWBtF+cRuKhqnG6iNWJWjBxYCFGhaWqvfk7DHu4DK/vEo1qJwZSegcH+q3xJ+evEmWiGQacXoU9RIscuzY1pF/8Of770wDcp52W1rjQCECaN8gTTThGZr7TpSmA0G5JW8oVXdK3+9VqoyYhqVFl+rI=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>5NGaL+pIjRo6Mcqm1/pap57cSodPZNfQ+92BA74fGvvbP684rEQRkwBBaKcPZZ64W3gQKzw5PhSRd/z0uKRI4w3OtCf2HozOX8X7SzXQ1/FscoZegyOzZIgkZ0VXD7tU3OfRLII/XpcI/6um7pnx7Gu2j2ZvX7AblHps56VFv8k=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="c77a259fdf220e90777691a22d130b549ff51213d15d508d0cb2daa170620675" Description="" Url=""><as:assemblyIdentity name="Geocoder.exe" version="1.0.0.2" publicKeyToken="5ad6ac8eb6d02374" language="neutral" processorArchitecture="amd64" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=LIORSHAHVERDI\Lior</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>UHtbsnDxM90DPvZ/Q+ym/s8UYBgKCANKu6dOIltg0Sc=</DigestValue></Reference></SignedInfo><SignatureValue>g/7gw3pBfIzFZ8vVVj+AZBjZWXJvgsg+RH27LpHGpVa6THs2yacKeWmbtQNDp5q9O7nZwNqEILR0fWnW4UTLoWn6etXd2xdnBQ7lNnam7SywpmOiyNc98ubtgMwIAaySXJvRevmOyDmU/ggs1OoyucVabeI+8ukkNGMreM4T/bo=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>5NGaL+pIjRo6Mcqm1/pap57cSodPZNfQ+92BA74fGvvbP684rEQRkwBBaKcPZZ64W3gQKzw5PhSRd/z0uKRI4w3OtCf2HozOX8X7SzXQ1/FscoZegyOzZIgkZ0VXD7tU3OfRLII/XpcI/6um7pnx7Gu2j2ZvX7AblHps56VFv8k=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB4TCCAUqgAwIBAgIQOdMzt+DFaIVLpyWEzXQ2zzANBgkqhkiG9w0BAQsFADAvMS0wKwYDVQQDHiQATABJAE8AUgBTAEgAQQBIAFYARQBSAEQASQBcAEwAaQBvAHIwHhcNMTYwMTI4MTkyNDE1WhcNMTcwMTI4MDEyNDE1WjAvMS0wKwYDVQQDHiQATABJAE8AUgBTAEgAQQBIAFYARQBSAEQASQBcAEwAaQBvAHIwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAOTRmi/qSI0aOjHKptf6Wqee3EqHT2TX0PvdgQO+Hxr72z+vOKxEEZMAQWinD2WeuFt4ECs8OT4UkXf89LikSOMNzrQn9h6Mzl/F+0s10NfxbHKGXoMjs2SIJGdFVw+7VNzn0SyCP16XCP+rpu6Z8exrto9mb1+wG5R6bOelRb/JAgMBAAEwDQYJKoZIhvcNAQELBQADgYEAcGJyFpGlQzYKHcGp3yQLPBESf+DOAqV4lBfMyaQvJ3FDAnREU/FVUS7/gOkhPVTYO2nRSaR5TsyGT4fR6aFajLGNHelECRc+RkpbwsybLi+LdeCoiZ3Us+XYXEwjoGSWdqlcl6RYJrKrRFF+PXAiYhgPir2QIsHj1hAb8ziB6sk=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
